@@ -4,6 +4,10 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * Response from charge of a card represented by a card nonce or a customer's
+ * card on file.
+ */
 public class ChargeResponse {
 
 	/**

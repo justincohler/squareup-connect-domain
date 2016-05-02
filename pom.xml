@@ -9,6 +9,7 @@
 	<properties>
 		<jackson.version>2.7.3</jackson.version>
 		<junit.version>4.12</junit.version>
+		<javadoc.version>2.10.3</javadoc.version>
 	</properties>
 
 	<dependencies>
@@ -23,4 +24,18 @@
 			<version>${junit.version}</version>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>${javadoc.version}</version>
+				<configuration>
+					<show>private</show>
+					<nohelp>true</nohelp>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
